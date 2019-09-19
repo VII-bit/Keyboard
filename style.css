@@ -1,0 +1,10 @@
+div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 26em;
+}
+
+button {
+	margin-top: 1px;
+	background-color: white;
+}

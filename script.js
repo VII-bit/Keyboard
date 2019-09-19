@@ -1,11 +1,3 @@
-/*let el = document.getElementById(0);
-alert(el);
-*/
-
-// document.addEventListener("keydown", alert('клавиша нажата'));
-
-
-
 function changeColor() {
 	event.preventDefault();
 	let key = event.code;
@@ -23,14 +15,12 @@ function changeColor2() {
 }
 
 function writeToInput() {
-	return alert(event.code);
-	let key = event.code;
-	if (key == `${key}`) {
-		document.getElementById("inputField").value = `${key}`;
-	}
+	let key = event.target;
+	if (key == '[object HTMLButtonElement]') {
+	document.getElementById('inputField').value = `${key.innerHTML}`;
+}
 }
 
 window.addEventListener('keydown', changeColor);
 window.addEventListener('keyup', changeColor2);
-window.addEventListener('onclick', writeToInput);
-
+window.addEventListener('click', writeToInput);

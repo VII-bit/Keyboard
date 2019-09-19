@@ -1,10 +1,31 @@
+ body {
+    background: url(bg.jpg) repeat;
+   }
+
+
 div {
     margin-left: auto;
     margin-right: auto;
-    width: 26em;
+    margin-top: 2em;
+    width: 55em;
 }
 
 button {
-	margin-top: 1px;
+	margin-top: 2px;
 	background-color: white;
+	padding: 0.75em;
+	font-size: 1.5em;
+}
+
+hr {
+	border: solid;
+}
+
+input {
+	font-size: 2em;
+  	width: 100%;
+}
+
+#Space {
+	width: 8em;
 }

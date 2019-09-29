@@ -1,17 +1,13 @@
 function changeColor() {
 	event.preventDefault();
 	let key = event.code;
-	if (key == `${key}`) {
-		document.getElementById(key).style.backgroundColor = 'red';
-	}
+	document.getElementById(key).style.backgroundColor = 'red';
 }
 
 function changeColor2() {
 	event.preventDefault();
 	let key = event.code;
-	if (key == `${key}`) {
-		document.getElementById(key).style.backgroundColor = 'grey';
-	}
+	document.getElementById(key).style.backgroundColor = 'grey';
 }
 
 function writeToInput() {
@@ -20,6 +16,8 @@ function writeToInput() {
 	document.getElementById('inputField').value = `${key.innerHTML}`;
 }
 }
+
+
 
 window.addEventListener('keydown', changeColor);
 window.addEventListener('keyup', changeColor2);
